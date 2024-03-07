@@ -1,0 +1,122 @@
+baseURL: "https://samyog.me/"
+title: Home
+icon: /static/hacker.ico
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+  disableXML: false
+  minifyOutput: false
+
+params:
+  env: production
+  title: Blogs
+  description: "Site description goes here"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Samyog Giri
+  DateFormat: "Feb 13 , 2024"
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+
+  label:
+    text: "Home"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  profileMode:
+    enabled: true
+    title: "Scott's Blog"
+    subtitle: "A Cybersecurity Enthusiast and a CTF Player"
+    imageUrl: "/images/git.jpeg"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: Profile
+    buttons:
+      - name: Tags
+        url: tags
+      - name: Profile
+        url: profile
+
+
+  homeInfoParams:
+    Title: "Hi there! I'm Scott"
+    Content: Welcome to my blog
+
+  socialIcons:
+    - name: Discord
+      url: "https://discordid.netlify.app/?id=731743352193548289"
+    - name: HackTheBox
+      url: "https://app.hackthebox.com/users/1037053"
+    - name: Github
+      url: "https://github.com/scottt10"
+    - name: buymeacoffee
+      url: "https://www.buymeacoffee.com/samyoggiriz"
+
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: Writeups   
+      name: HTB Writeups
+      url: /blog/
+      weight: 10
+    - identifier: CTFs
+      name: CTFs
+      url: /ctf/
+      weight: 30
+    - identifier: github
+      name: Notes
+      url: https://scott404.notion.site/Note-725646b6b074424caad9bf23e2ff0a85?pvs=4
+      weight: 50
+
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    style: monokai
